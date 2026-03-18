@@ -1,4 +1,4 @@
-# Olá, eu sou Josafha Carvalho 👋
+# Olá, eu sou Josafha Pereira de Carvalho 👋
 
 **Estudante de Engenharia da Computação | Ciência de Dados & Machine Learning**
 
