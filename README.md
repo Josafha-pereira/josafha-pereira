@@ -2,31 +2,79 @@
 
 **Estudante de Engenharia da Computação | Ciência de Dados & Machine Learning**
 
-🎓 Graduando no 6º semestre de Engenharia da Computação pela Universidade Federal do Pará (UFPA), com foco em transformar dados brutos em soluções preditivas escaláveis. Tenho experiência na construção de pipelines *end-to-end*, indo desde o rigor estatístico da modelagem até o deploy em microsserviços.
+🎓 Graduando no 7º semestre de Engenharia da Computação pela Universidade Federal do Pará (UFPA). Tenho interesse em Ciência de Dados, Machine Learning e Engenharia de Dados, com projetos que passam por análise exploratória, preparação dos dados, modelagem, validação e integração dos modelos em aplicações.
 
-🔬 Atualmente, sou Pesquisador (PIBIC) no MensureLab (UFPA), atuando com engenharia de dados (mineração de texto e recuperação de informação) e desenvolvimento de *dashboards*.
-
----
-
-### 🛠️ Stack Tecnológico
-
-* **Linguagens:** Python, Java, SQL
-* **Machine Learning & Estatística:** XGBoost, Scikit-Learn, Prophet, Regressão Linear, Testes de Hipótese (ANOVA, Pearson, Shapiro-Wilk)
-* **Processamento de Dados & NLP:** Pandas, NumPy, SciPy, SpaCy, Expressões Regulares (Regex)
-* **Engenharia de Software & Ambientes:** Docker, RabbitMQ, MongoDB, Git/GitHub, Jupyter / Google Colab
+🔬 Fui Bolsista de Iniciação Científica (PIBIC) no laboratório MensureLab (UFPA), atuando em desenvolvimento de códigos para tratamento de dados, mineração de texto, Reconhecimento de Entidades Nomeadas. Além de atuar no desenvolvimento de Dashboards e escrito um artigo científico.
 
 ---
 
-### 🚀 Principais Projetos
+## 🛠️ Stack Tecnológico
 
-* 📦 **Sistema de Gestão de Estoque Inteligente:** Arquitetura de microsserviços via Docker integrando um classificador de qualidade de perecíveis (XGBoost com até 98,5% de acurácia) e um previsor de demanda (Prophet) usando persistência no MongoDB e mensageria RabbitMQ. O projeto completo pode ser visto na organização "Projetos-III-UFPA-2025-4", neste repositório, será mostrado apenas o repositório de pesquisa dos modelos (pré-processamento, treinamento e validação), com o modelo de previsão (prophet) na fase de pesquisa  sendo utilizado dados estáticos em razão de o ERP do projeto inicialmente não ter tido dados de vendas (porém, no projeto em produção foram coletados os dados de vendas no mongodb)
-* 🏃‍♂️ **Reconhecimento de Atividades Humanas (HAR):** Pipeline de Processamento Digital de Sinais (Filtros Butterworth, FFT) e modelagem preditiva (XGBoost, Random Forest, SVM) para classificar movimentação via dados de acelerômetro.
-* ⚖️ **Modelagem Preditiva de Criminalidade:** Análise Exploratória (EDA), testes de hipótese para validação causal de variáveis demográficas e treinamento de um modelo de Regressão Linear ($R^2$ de 0.81) com análise de resíduos.
-* 🧹 **Pipeline Automático de Saneamento:** Programa de limpeza de dados em larga escala (+120 mil registros, dentro de 4 datasets) utilizando NLP (SpaCy) e Regex para encontrar nomes de produtos com base em suas descrições.
+| Área | Tecnologias |
+| --- | --- |
+| **Linguagens** | Python, SQL (SQLite) |
+| **Machine Learning** | XGBoost, Scikit-Learn, Prophet |
+| **Análise e Processamento de Dados** | Pandas, NumPy, SciPy, SpaCy, Expressões Regulares |
+| **Infraestrutura e Ferramentas** | Docker, Docker Compose, RabbitMQ, MongoDB, Git, GitHub, Jupyter, Google Colab |
+
+## 📊 Métodos e Avaliação
+
+| Área | Experiência prática |
+| --- | --- |
+| **Classificação** | F1-macro, matriz de confusão, features importance, permutation importance, validação cruzada |
+| **Séries Temporais** | Validação cruzada temporal, MAE, MAPE, RMSE, análise de intervalo de incerteza |
+| **Estatística** | Regressão Linear, correlação de Pearson, correlação de Spearman, Informação Mútua, ANOVA, ANOVA de Welch, teste de Levene, teste de Shapiro-Wilk |
+| **Análise Exploratória** | Distribuições, análise de correlação, relações entre variáveis, séries temporais e análise de resíduos |
+---
+
+## 🚀 Principais Projetos
+
+### 📦 N.O.V.A — Inteligência Artificial aplicada à Gestão de Estoque
+
+[**Ver projeto no GitHub**](https://github.com/Josafha-pereira/stockly-ia)
+
+Projeto desenvolvido no contexto da Stockly, um sistema acadêmico de gestão de estoque para supermercados. A N.O.V.A reúne dois serviços de Machine Learning voltados à classificação das condições de armazenamento de frutas e à previsão de demanda.
+
+Na classificação, desenvolvi quatro modelos XGBoost especializados por fruta, utilizando temperatura, umidade e CO₂ como variáveis de entrada. O processo incluiu análise exploratória, preparação dos dados, treinamento, avaliação e exportação dos modelos finais.
+
+Na previsão de demanda, utilizei Prophet com modelos separados por loja e produto. A pesquisa incluiu análise das séries temporais, validação cruzada temporal, avaliação com MAE, MAPE, RMSE e cobertura do intervalo de incerteza, além da geração das previsões futuras.
+
+Também implementei a integração local dos modelos com RabbitMQ e MongoDB, organizei os serviços em containers Docker e desenvolvi testes de integração e benchmarks para avaliar o fluxo completo.
+
+**Principais tecnologias**
+
+`Python` `XGBoost` `Prophet` `Pandas` `Scikit-Learn` `RabbitMQ` `MongoDB` `Docker`
 
 ---
 
-### 📫 Como me encontrar
+### 🏃‍♂️ Reconhecimento de Atividades Humanas
 
-- **Email:** josafhapereira3@gmail.com
-- **LinkedIn:** [Josafha Pereira de Carvalho](https://www.linkedin.com/in/josafha-pereira-de-carvalho-6a134820a)
+Pipeline de Processamento Digital de Sinais e Machine Learning para classificação de movimento (andando, correndo ou pulando) a partir de dados coletados de um acelerômetro.
+
+Foram aplicados filtros Butterworth e FFT. O objetivo foi fazer uma disputa entre os modelos XGBoost, Random Forest e SVM. Ganhando qual teve maior estabilidade e performance.
+
+---
+
+### ⚖️ Modelagem Preditiva de Criminalidade
+
+Projeto de análise estatística e modelagem preditiva utilizando dados demográficos e indicadores de criminalidade.
+
+Incluiu análise exploratória, testes de hipótese, regressão linear e análise de resíduos, com modelo final apresentando \(R^2\) de aproximadamente 0,81.
+
+---
+
+### 🧹 Pipeline de Saneamento de Dados
+
+Pipeline para limpeza e padronização de mais de 120 mil registros distribuídos em quatro datasets.
+
+Foram utilizadas técnicas de processamento de texto com SpaCy e Expressões Regulares para identificar e padronizar nomes de produtos a partir de descrições não estruturadas.
+
+---
+
+## 📫 Contato
+
+- **Email**  
+  josafhapereira3@gmail.com
+
+- **LinkedIn**  
+  [Josafha Pereira de Carvalho](https://www.linkedin.com/in/josafha-pereira-de-carvalho-6a134820a)
