@@ -24,8 +24,9 @@
 | **Classificação** | F1-macro, matriz de confusão, features importance, permutation importance, validação cruzada |
 | **Séries Temporais** | Validação cruzada temporal, MAE, MAPE, RMSE, análise de intervalo de incerteza |
 | **Estatística** | Regressão Linear, correlação de Pearson, correlação de Spearman, Informação Mútua, ANOVA, ANOVA de Welch, teste de Levene, teste de Shapiro-Wilk |
-| **Análise Exploratória** | Boxplots, scatter plots, histogramas, mapas de correlação, gráficos de séries temporais e análise gráfica de resíduos |---
+| **Análise Exploratória** | Boxplots, scatter plots, histogramas, mapas de correlação, gráficos de séries temporais e análise gráfica de resíduos |
 
+---
 ## 🚀 Principais Projetos
 
 ### 📦 N.O.V.A — Inteligência Artificial aplicada à Gestão de Estoque
