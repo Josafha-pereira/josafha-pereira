@@ -13,20 +13,23 @@
 | Área | Tecnologias |
 | --- | --- |
 | **Linguagens** | Python, SQL (SQLite) |
-| **Machine Learning** | XGBoost, Scikit-Learn, Prophet |
-| **Análise e Processamento de Dados** | Pandas, NumPy, SciPy, SpaCy, Expressões Regulares |
+| **Machine Learning** | XGBoost, Random Forest, Scikit-Learn, SVM, Prophet |
+| **Análise e Processamento de Dados** | Pandas, NumPy, SciPy, Expressões Regulares |
+| **Visualização de Dados** | Matplotlib, Seaborn |
 | **Infraestrutura e Ferramentas** | Docker, Docker Compose, RabbitMQ, MongoDB, Git, GitHub, Jupyter, Google Colab |
 
 ## 📊 Métodos e Avaliação
 
 | Área | Experiência prática |
 | --- | --- |
-| **Classificação** | F1-macro, matriz de confusão, features importance, permutation importance, validação cruzada |
+| **Classificação** | F1-macro, matriz de confusão, feature importance |
+| **Regressão** | R², MAE, RMSE, validação cruzada K-Fold, Feature Importance, Permutation Importance |
 | **Séries Temporais** | Validação cruzada temporal, MAE, MAPE, RMSE, análise de intervalo de incerteza |
 | **Estatística** | Regressão Linear, correlação de Pearson, correlação de Spearman, Informação Mútua, ANOVA, ANOVA de Welch, teste de Levene, teste de Shapiro-Wilk |
 | **Análise Exploratória** | Boxplots, scatter plots, histogramas, mapas de correlação, gráficos de séries temporais e análise gráfica de resíduos |
 
 ---
+
 ## 🚀 Principais Projetos
 
 ### 📦 N.O.V.A — Inteligência Artificial aplicada à Gestão de Estoque
@@ -47,34 +50,26 @@ Também implementei a integração local dos modelos com RabbitMQ e MongoDB, org
 
 ---
 
+### ⚖️ Predição de Criminalidade Violenta em Comunidades
+
+[**Ver projeto no GitHub**](https://github.com/Josafha-pereira/Modelagem-Preditiva-de-Criminalidade)
+
+Projeto de Machine Learning para estimar a taxa de criminalidade violenta de comunidades a partir de características socioeconômicas, demográficas e de estrutura familiar.
+
+A análise exploratória envolveu seleção de variáveis com Informação Mútua, correlações de Pearson e Spearman, agrupamento hierárquico para verificar redundância e testes de Levene e ANOVA de Welch para avaliação da variável categórica `State`.
+
+Na modelagem, comparei XGBoost Regressor e Random Forest Regressor por desempenho e estabilidade em validação cruzada K-Fold. Também foram analisados overfitting, regularização, Feature Importance e Permutation Importance.
+
+O XGBoost apresentou o melhor resultado, com R² médio de 0,66 e desvio padrão de 0,033 entre os folds. O modelo final foi treinado novamente com as 1.395 comunidades disponíveis e utilizado para gerar previsões para outras 599 comunidades reservadas para teste.
+
+**Principais tecnologias**
+
+`Python` `XGBoost` `Random Forest` `Scikit-Learn` `Pandas` `NumPy` `SciPy` `Matplotlib` `Seaborn`
+
+---
+
 ### 🏃‍♂️ Reconhecimento de Atividades Humanas
 
 Pipeline de Processamento Digital de Sinais e Machine Learning para classificação de movimento (andando, correndo ou pulando) a partir de dados coletados de um acelerômetro.
 
 Foram aplicados filtros Butterworth e FFT. O objetivo foi fazer uma disputa entre os modelos XGBoost, Random Forest e SVM. Ganhando qual teve maior estabilidade e performance.
-
----
-
-### ⚖️ Modelagem Preditiva de Criminalidade
-
-Projeto de análise estatística e modelagem preditiva utilizando dados demográficos e indicadores de criminalidade.
-
-Incluiu análise exploratória, testes de hipótese, regressão linear e análise de resíduos, com modelo final apresentando \(R^2\) de aproximadamente 0,81.
-
----
-
-### 🧹 Pipeline de Saneamento de Dados
-
-Pipeline para limpeza e padronização de mais de 120 mil registros distribuídos em quatro datasets.
-
-Foram utilizadas técnicas de processamento de texto com SpaCy e Expressões Regulares para identificar e padronizar nomes de produtos a partir de descrições não estruturadas.
-
----
-
-## 📫 Contato
-
-- **Email**  
-  josafhapereira3@gmail.com
-
-- **LinkedIn**  
-  [Josafha Pereira de Carvalho](https://www.linkedin.com/in/josafha-pereira-de-carvalho-6a134820a)
