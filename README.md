@@ -4,7 +4,7 @@
 
 🎓 Graduando no 7º semestre de Engenharia da Computação pela Universidade Federal do Pará (UFPA). Tenho interesse em Ciência de Dados, Machine Learning e Engenharia de Dados, com projetos que passam por análise exploratória, preparação dos dados, modelagem, validação e integração de modelos em aplicações.
 
-🔬 Fui bolsista de Iniciação Científica (PIBIC) no laboratório MensureLab (UFPA), atuando no desenvolvimento de códigos para tratamento de dados, mineração de texto e Reconhecimento de Entidades Nomeadas (NER). Também atuei no desenvolvimento de dashboards e participei da escrita de um artigo científico.
+🔬 Fui bolsista de Iniciação Científica (PIBIC) no laboratório MensureLab (UFPA), atuando no desenvolvimento de códigos para tratamento de dados, mineração de texto e Reconhecimento de Entidades Nomeadas (NER). Também atuei no desenvolvimento de dashboards (tublau) e participei da escrita de um artigo científico.
 
 ---
 
@@ -61,7 +61,7 @@ A análise exploratória envolveu prevenção de data leakage, filtro de complet
 
 Na modelagem, comparei XGBoost Regressor e Random Forest Regressor por desempenho e estabilidade em validação cruzada K-Fold. Também foram analisados overfitting, regularização de hiperparâmetros, Feature Importance e Permutation Importance.
 
-O XGBoost apresentou R² médio de 0,66 e desvio padrão de 0,033 entre os folds. O modelo final foi treinado com as 1.395 comunidades disponíveis para treino e validação e utilizado para gerar previsões para outras 599 comunidades mantidas fora da análise e do treinamento.
+O XGBoost apresentou R² médio de 0.66 e desvio padrão de 0.033 entre os folds. O modelo final foi treinado com as 1.395 comunidades disponíveis para treino e validação e utilizado para gerar previsões para outras 599 comunidades mantidas fora da análise e do treinamento.
 
 **Principais tecnologias**
 
@@ -73,13 +73,13 @@ O XGBoost apresentou R² médio de 0,66 e desvio padrão de 0,033 entre os folds
 
 [**Ver projeto no GitHub**](https://github.com/Josafha-pereira/Reconhecimento-de-Atividades-Humanas-HAR)
 
-Projeto de Processamento Digital de Sinais e Machine Learning para classificação de três atividades humanas — caminhada, corrida e salto — a partir de dados coletados por um acelerômetro triaxial.
+Projeto de Processamento Digital de Sinais e Machine Learning para classificação de três atividades humanas (caminhada, corrida e salto) a partir de dados coletados por um acelerômetro triaxial.
 
-O processamento inclui filtros Butterworth passa-alta e passa-baixa, janelamento deslizante com 75% de overlap e extração de 15 características estatísticas e espectrais, incluindo média, desvio padrão, autocorrelação, pico FFT e entropia espectral.
+O processamento inclui filtros Butterworth passa-alta e passa-baixa, janelamento deslizante com 75% de overlap e extração de 15 características estatísticas e espectrais, sendo média, desvio padrão, autocorrelação, pico FFT e entropia espectral.
 
 Foram comparados SVM, Random Forest e XGBoost utilizando F1 Macro e validação em cinco folds formados por blocos temporais. Para evitar compartilhamento de amostras entre treino e validação, janelas de treino sobrepostas aos blocos de validação são removidas em cada fold.
 
-O Random Forest apresentou o maior F1 Macro médio, com 0,77, seguido pelo XGBoost, com 0,73, e pelo SVM, com 0,68. A variação entre os folds foi alta nos três modelos, principalmente devido à quantidade reduzida de janelas disponíveis para avaliação.
+O Random Forest apresentou o maior F1 Macro médio, com 0.77, seguido pelo XGBoost, com 0.73, e pelo SVM, com 0.68. A variação entre os folds foi alta nos três modelos, devido à quantidade reduzida de janelas disponíveis para avaliação.
 
 **Principais tecnologias**
 
