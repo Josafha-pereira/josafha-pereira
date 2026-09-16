@@ -16,7 +16,8 @@
 | **Machine Learning** | XGBoost, Random Forest, Scikit-Learn, SVM, Prophet |
 | **Análise e Processamento de Dados** | Pandas, NumPy, SciPy, Expressões Regulares |
 | **Visualização de Dados** | Matplotlib, Seaborn |
-| **Infraestrutura e Ferramentas** | Docker, Docker Compose, RabbitMQ, MongoDB, Git, GitHub, Jupyter, Google Colab |
+| **Infraestrutura e Ferramentas** | Git, GitHub, Linux, venv, Docker, Docker Compose, RabbitMQ, MongoDB, Jupyter, Vs Code e Google Colab |
+                                     
 
 ## 📊 Métodos e Avaliação
 
